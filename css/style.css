@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    font-family: 'Rosario', sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(31, 46, 50);
+    border-bottom-color: rgb(42, 190, 191);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.nav .nav-desktop, .nav .logo, .nav .pipe {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.nav .nav-desktop a, .nav .nav-mobile a, .logo, .nav li, #logo {
+    text-decoration: none;
+    color: white;
+}
+
+.nav .nav-desktop a, .nav .nav-mobile a {
+    padding: 15px 20px;
+}
+
+.nav-mobile {
+    display: none;
+    color: aqua;
+}
+
+#logo {
+    display: block;
+}
+
+#logo:hover + #hover-me {
+    display: block;
+}
+
+#hover-me {
+    display: none;
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+}
+
+#logo {
+    display: block;
+}
+
+#logo:hover + #card {
+	display: block;
+}
