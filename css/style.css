@@ -160,9 +160,7 @@
     position: relative;
 }
 
-.banner-title {
-    align-self: flex-start;
-}
+.banner-title { align-self: flex-start; }
 
 .banner h1 {
     font-family: 'Lobster', cursive;
@@ -265,6 +263,4 @@
     padding: 15px 25px;
 }
 
-.resume-text {
-    padding: 15px 0px;
-}
+.resume-text { padding: 15px 0px; }
