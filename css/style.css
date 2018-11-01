@@ -70,3 +70,88 @@
 #logo:hover + #card {
 	display: block;
 }
+
+
+#card {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    top: 80px;
+    display: none;
+	background:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    left: calc((100vw - 960px) / 2);
+}
+
+.card-container {
+    display: flex;
+
+}
+#card:after, #card:before {
+	bottom: 100%;
+	left: 30px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#card:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: white;
+	border-width: 10px;
+	margin-left: -10px;
+}
+#card:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: solid 2px black;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.card-left, .card-right {
+    height: 260px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.card-left {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-right {
+    padding-left: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: left;
+}
+
+.card-right h1 {
+    margin-bottom: 10px;
+}
+
+.card-right p {
+    margin-bottom: 5px;
+}
+
+.card-right p i {
+    width: 20px;
+}
+
+.card-left {
+    border-right: 1px solid rgb(42, 190, 191);
+}
+
+.card-left img{
+    border-radius: 50%;
+    border: 5px solid rgb(42, 190, 191);
+    width: 230px;
+    height: 230px;
+}
