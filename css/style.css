@@ -155,3 +155,45 @@
     width: 230px;
     height: 230px;
 }
+
+/* Banner */
+
+.banner {
+    padding-top: 70px;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgb(42, 190, 191);
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-title {
+    align-self: flex-start;
+}
+
+.banner h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 104px;
+    color: white;
+    text-shadow: 5px 5px 0px black;
+}
+
+.banner h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 0px white;
+}
+
+.banner h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
