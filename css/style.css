@@ -48,13 +48,9 @@
     color: aqua;
 }
 
-#logo {
-    display: block;
-}
+#logo { display: block; }
 
-#logo:hover + #hover-me {
-    display: block;
-}
+#logo:hover + #hover-me { display: block; }
 
 #hover-me {
     display: none;
@@ -63,13 +59,9 @@
     background-color: blue;
 }
 
-#logo {
-    display: block;
-}
+#logo { display: block; } 
 
-#logo:hover + #card {
-	display: block;
-}
+#logo:hover + #card { display: block; }
 
 
 #card {
@@ -84,10 +76,8 @@
     left: calc((100vw - 960px) / 2);
 }
 
-.card-container {
-    display: flex;
+.card-container { display: flex; }
 
-}
 #card:after, #card:before {
 	bottom: 100%;
 	left: 30px;
@@ -133,21 +123,13 @@
     text-align: left;
 }
 
-.card-right h1 {
-    margin-bottom: 10px;
-}
+.card-right h1 { margin-bottom: 10px; }
 
-.card-right p {
-    margin-bottom: 5px;
-}
+.card-right p { margin-bottom: 5px; }
 
-.card-right p i {
-    width: 20px;
-}
+.card-right p i { width: 20px; }
 
-.card-left {
-    border-right: 1px solid rgb(42, 190, 191);
-}
+.card-left { border-right: 1px solid rgb(42, 190, 191); }
 
 .card-left img{
     border-radius: 50%;
