@@ -137,3 +137,80 @@
     width: 230px;
     height: 230px;
 }
+
+/* Banner */
+
+.banner {
+    padding-top: 70px;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgb(42, 190, 191);
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-title {
+    align-self: flex-start;
+}
+
+.banner h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 104px;
+    color: white;
+    text-shadow: 5px 5px 0px black;
+}
+
+.banner h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 0px white;
+}
+
+.banner h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+.arrow {
+    text-align: center;
+    bottom: 0;
+    width: 60px;
+    left: calc(50% - 25px);
+    right: calc(50% - 25px);
+    position: absolute;
+    margin-bottom: 50px;
+
+}
+
+.arrow a {
+    text-decoration: none;
+    color: white;
+    padding:15px;
+}
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-60px);
+    }
+    60% {
+      transform: translateY(-800px);
+    }
+  }
