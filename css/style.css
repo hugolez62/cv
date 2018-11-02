@@ -274,7 +274,7 @@
 .formation {
     padding-top: 110px;
     width: 100%;
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(150, 150, 150);
     padding-bottom: 90px;
 
 }
@@ -320,7 +320,7 @@
     cursor:pointer;
 }
 
-.event h2:hover + .content{
+.event .visible:hover + .content{
     height:150px;
 }
 
@@ -336,7 +336,7 @@
     padding-left: 20px;
 }
 
-.right .h2, .right p{
+.right .h2, .right .content p{
     text-align:left;
 
 }
@@ -358,7 +358,7 @@
     
 }
 
-.left h2, .left p{		
+.left .visible, .content p {		
     text-align:right;
     margin-right: 20px;
 }
