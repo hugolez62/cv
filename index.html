@@ -1,9 +1,25 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0" />
     <title>Titre de la page</title>
+    <link rel="stylesheet" media="all" href="css/skills-styles.css">
+    <link rel="stylesheet" media="all" href="css/skills-styles-stripped.css">
+    <link rel="stylesheet" media="all" href="css/style-commun.css">
+    <link rel="stylesheet" media="all" href="css/style-header.css">
+    <link rel="stylesheet" media="all" href="css/style-banner.css">
+    <link rel="stylesheet" media="all" href="css/style-resume.css">
+    <link rel="stylesheet" media="all" href="css/style-formations.css">
+    <link rel="stylesheet" media="all" href="css/style-footer.css">
+    <link rel="stylesheet" media="all" href="css/style-cv.css">
+    <link rel="stylesheet" media="all" href="css/style-skills.css">
+    <link rel="stylesheet" media="all" href="css/style-progress.css">
+    <link rel="stylesheet" media="all" href="css/style-form.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"/>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
     <link rel="stylesheet" media="all" href="css/style.css">
     <link rel="stylesheet" media="all" href="css/hover.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
@@ -12,80 +28,77 @@
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/script.js"></script>
 </head>
+
+<!-- en ce moment, contactez moi, une quesiton, une remarque, laissez moi un messages, mes outils-->
+
 <body>
     <div class="header">
-                <div class="container nav-content">
-                    <nav class="nav">
-                        <ul class="nav-items">
-                           
-                            <a id="logo" class="logo infinite animated pulse" href="#">Hugo</a>
-                            <div id="card">
-                                <div class="card-container">
-                                    <div class="card-left">
-                                        <img src="img/avatar.jpg"/>
-                                    </div>
-                                    <div class="card-right">
-                                        <h1><i class="fas fa-info-circle"></i> Informations</h1>
-                                        <p><i class="fas fa-birthday-cake"></i> 21 ans</p><br>
-                                        <p><i class="fa fa-at"></i> contact@hugolezier.fr</p><br>
-                                        <p><i class="fas fa-map-marker-alt"></i> Calais, France</p><br>
-                                        <p><i class="fas fa-graduation-cap"></i> Licence 3</p><br>
-                                        <p><i class="fas fa-car"></i> Permis B</p><br>
-                                        <div class="card-social-links">
-                                            <i class="fab fa-github"></i>
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </div>
-                                    
-                                    </div>
+        <div class="container nav-content">
+            <nav class="nav">
+                <ul class="nav-items">
+
+                    <a id="logo" class="logo infinite animated pulse js-scrollTo" href="#banner">Hugo</a>
+                    <div id="card">
+                        <div class="card-container">
+                            <div class="card-left">
+                                <img src="img/avatar.jpg" />
+                            </div>
+                            <div class="card-right">
+                                <h1><i class="fas fa-info-circle"></i> Informations</h1>
+                                <p><i class="fas fa-birthday-cake"></i> 21 ans</p>
+                                <p><i class="fa fa-at"></i> contact@hugolezier.fr</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Calais, France</p>
+                                <p><i class="fas fa-graduation-cap"></i> Licence 3</p>
+                                <p><i class="fas fa-car"></i> Permis B</p>
+                                <div class="card-social-links">
+                                    <i class="fab fa-github"></i>
+                                    <i class="fab fa-linkedin-in"></i>
                                 </div>
                             </div>
-        
-                            <li class="pipe">|</li>
-                            <li class="nav-desktop nav-about">
-                                <a class="js-scrollTo" href="#resume">Présentation</a>
-                            </li>
-                            <li class="nav-desktop nav-formation">
-                                <a class="js-scrollTo" href="#formation">Formations</a>
-                            </li>
-                            <li class="nav-desktop nav-experience">
-                                <a href="#">Expériences</a>
-                            </li>
-                            <li class="nav-desktop nav-skills">
-                                <a href="#">Compétences</a>
-                            </li>
-                            <li class="nav-desktop nav-cv">
-                                <a href="#">CV</a>
-                            </li>
-                            <li class="nav-desktop nav-contact">
-                                <a href="#">Contact</a>
-                            </li>
-                            <li class="nav-mobile nav-about">
-                                <a class="js-scrollTo" href="#resume"><i class="fa fa-user"></i></a>
-                            </li>
-                            <li class="nav-mobile nav-formation">
-                                <a class="js-scrollTo" href="#formation"><i class="fa fa-graduation-cap"></i></a>
-                            </li>
-                            <li class="nav-mobile nav-experience">
-                                <a href="#"><i class="fa fa-brain"></i></a>
-                            </li>
-                            <li class="nav-mobile nav-skills">
-                                <a href="#"><i class="fa fa-wrench"></i></a>
-                            </li>
-                            <li class="nav-mobile nav-cv">
-                                <a href="#"><i class="fa fa-file-pdf"></i></a>
-                            </li>
-                            <li class="nav-mobile nav-contact">
-                                <a href="#"><i class="fa fa-phone"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                        </div>
+                    </div>
+                    <li class="pipe">|</li>
+                    <li class="nav-desktop nav-about">
+                        <a class="js-scrollTo" href="#resume">Présentation</a>
+                    </li>
+                    <li class="nav-desktop nav-formation">
+                        <a class="js-scrollTo" href="#formation">Parcours</a>
+                    </li>
+                    <li class="nav-desktop nav-skills">
+                        <a class="js-scrollTo" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-desktop nav-cv">
+                        <a class="js-scrollTo" href="#cv">CV</a>
+                    </li>
+                    <li class="nav-desktop nav-contact">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="nav-mobile nav-about">
+                        <a class="js-scrollTo" href="#resume"><i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-mobile nav-formation">
+                        <a class="js-scrollTo" href="#formation"><i class="fa fa-graduation-cap"></i></a>
+                    </li>
+                    <li class="nav-mobile nav-skills">
+                        <a class="js-scrollTo" href="#skills"><i class="fa fa-wrench"></i></a>
+                    </li>
+                    <li class="nav-mobile nav-cv">
+                        <a class="js-scrollTo" href="#cv"><i class="fa fa-file-pdf"></i></a>
+                    </li>
+                    <li class="nav-mobile nav-contact">
+                        <a href="#"><i class="fa fa-phone"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    <progress class="scroll-progress"></progress>
 
-    <div class="banner">
+
+    <div id="banner" class="banner">
         <div class="container">
             <div class="banner-title">
-                <h1 class="animated bounceInLeft">Hugo Lezier</h1>
+                <h1 class="animated bounceInLeft">{ Hugo Lezier }</h1>
                 <br>
                 <h3 class="animated zoomIn">étudiant & apprenti</h3>
                 <br>
@@ -99,112 +112,318 @@
     </div>
 
     <div id="resume" class="resume">
-            <div class="container">
-                <div class="block-title resume-title">
-                    <h1><i class="fas fa-user-tie"></i> Petite présentation</h1>
-                </div>
-    
-                <div class="animated flipInX resume-block resume-left">
-                    <div class="resume-icon">
-                        <i class="fas fa-user-tie"></i>
+        <div class="container">
+            <div class="wrapperMain">
+                <section id="services" class="bounce-inInverse">
+                    <div class="containerContent">
+                        <div class="set_size_section1">
+                            <div class="block-title resume-title">
+                                <h1><i class="fas fa-graduation-cap"></i> Petite présentation</h1>
+                            </div>
+                            <div class="article_center2">
+                                <article class="section1_article">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h3></h3>
+                                    <p>Metus Vestibulum cursus elit pretium auctor cursus lorem Vestibulum eros
+                                        sagittis. Netus pede Vestibulum Quisque Nam pretium Donec ut vitae quis
+                                        parturient.</p>
+                                </article>
+                                <article class="section1_article">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h3></h3>
+                                    <p>Condimentum platea cursus porta tellus eros consectetuer metus Sed aliquet
+                                        tempus. Laoreet non ac porta urna Vestibulum congue id eu elit dignissim.
+                                        Sollicitudin vitae ipsum massa enim lacus</p>
+                                </article>
+                                <article class="section1_article">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h3>Hobbies</h3>
+                                    <p>Buspendisse in lorem ipsum ut magna pharera aliquet non sodales lorem ipsum
+                                        belit. Donec sed odio rera magna pharera aliquet. Nulla uitae elit libero, a
+                                        pharetra augue nulla ligula massa pharera aliquet</p>
+                                </article>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resume-text">
-                        <h4>Qui suis-je ?</h4>
-                        <p>
-                            Je suis actuellement étudiant en Licence 3 Informatique et apprenti développeur web chez <a href="http://www.adexos.fr">Adexos</a>.
-                            J'ai rejoins l'alternance lors de ma deuxième année de DUT informatique, où j'occupais le poste d'administrateur système/réseau et 
-                            développeur d'applications chez <a href="http://www.graftech.com/">Graftech France</a>
-                        </p>
-    
-                    </div>
-                </div>
-                <div class="animated flipInX resume-block resume-right">
-                    <div class="resume-text">
-                        <h4>Hobbies</h4>
-                        <p>
-                            En parallèle de l'informatique, je suis passionné de musique depuis mon plus jeune âge, à mes heures perdues le week-end, je suis Disc-Jockey
-                        </p>
-                    </div>
-                    <div class="resume-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                </div>
-                <div class="animated flipInX resume-block resume-left">
-                    <div class="resume-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="resume-text">
-                        <h4>Hobbies</h4>
-                        <p>test</p>
-                        <p>test</p>
-    
-                    </div>
-                </div>
-    
+                </section>
             </div>
         </div>
+    </div>
 
-        <div id="formation" class="formation">
-                <div class="container formation-content">
-                    <div class="block-title formation-title">
-                        <h1><i class="fas fa-graduation-cap"></i> Mon parcours</h1>
+    <div id="formation" class="formation">
+        <div class="container formation-content">
+            <div class="block-title formation-title">
+                <h1><i class="fas fa-graduation-cap"></i> Mon parcours</h1>
+            </div>
+
+            <div class="timeline-block">
+                <ul class="timeline">
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">Licence 3 Informatique</span><br>
+                                <div class="under-flag">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i>
+                                        Université du Littoral Côte d'Opale, Calais</h4><br>
+                                    <span class="time-wrapper"><span class="time">2018 - Présent</span></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="desc-head">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i>
+                                        Université du Littoral Côte d'Opale, Calais</h4><br>
+                                    <span class="time-wrapper"><span class="time">2018 - Présent</span></span>
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt
+                                in culpa qui officia deserunt mollit anim id est laborum
+                            </div>
+                            <small class="read-more">Voir plus</small>
+                        </div>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Développeur Web Full-stack</span><br>
+                                <div class="under-flag">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i> Adexos,
+                                        Béthune</h4><br>
+                                    <span class="time-wrapper"><span class="time">2018 - présent</span></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="desc-head">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i> Adexos,
+                                        Béthune</h4><br>
+                                    <span class="time-wrapper"><span class="time">2018 - présent</span></span>
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt
+                                in culpa qui officia deserunt mollit anim id est laborum
+                            </div>
+                            <small class="read-more">Voir plus</small>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Administrateur système/réseau</span><br>
+                                <div class="under-flag">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i> Graftech
+                                        France S.N.C, Calais</h4><br>
+                                    <span class="time-wrapper"><span class="time">2017 - 2018</span></span><br>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="desc-head">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i> Graftech
+                                        France S.N.C, Calais</h4><br>
+                                    <span class="time-wrapper"><span class="time">2017 - 2018</span></span>
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt
+                                in culpa qui officia deserunt mollit anim id est laborum
+                            </div>
+                            <small class="read-more">Voir plus</small>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">DUT Informatique</span><br>
+                                <div class="under-flag">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i> IUT du
+                                        Littoral Côte d'Opale, Calais</h4><br>
+                                    <span class="time-wrapper"><span class="time">2016 - 2018</span></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="desc-head">
+                                    <h4 class="hvr-icon-up"><i class="fas fa-map-marker-alt hvr-icon"></i> IUT du
+                                        Littoral Côte d'Opale, Calais</h4><br>
+                                    <span class="time-wrapper"><span class="time">2016 - 2018</span></span>
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt
+                                in culpa qui officia deserunt mollit anim id est laborum
+                            </div>
+                            <small class="read-more">Voir plus</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="skills" class="skills">
+        <div class="container skills-content">
+            <div class="block-title skills-title">
+                <h1>Mes compétences</h1>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-box-title">
+                    <h1>Développement web</h1>
+                </div>
+                <div class="skill-box-content-1">
+                    <div class="bars">
+                        <div class="bar">
+                            <div class="bar-level" data-level="80%" data-text="HTML" data-icon="fab fa-html5"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-level" data-level="57%" data-text="CSS" data-icon="fab fa-css3-alt"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-level" data-level="94%" data-text="JS/jQuery" data-icon="fab fa-js"></div>
+                        </div>
                     </div>
-                    
-                    <div class="timeline-block">             
-                        <ul class="timeline">
-                            <li>
-                                <div class="direction-r">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">Freelancer</span>
-                                        <span class="time-wrapper"><span class="time">2013 - present</span></span>
-                                    </div>
-                                    <div class="desc">My current employment. Way better than the position before!</div>
-                                </div>
-                            </li>
-                        
-                            <li>
-                                <div class="direction-l">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">Apple Inc.</span>
-                                        <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-                                    </div>
-                                    <div class="desc">
-                                        My first employer. All the stuff I've learned and projects I've been working on.
-                                    </div>
-                                </div>
-                                <div class="direction-r">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">Apple Inc.</span>
-                                        <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-                                    </div>
-                                    <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <div class="direction-r">
-                                    <div class="flag-wrapper">
-                                        <span class="flag">Harvard University</span>
-                                        <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-                                    </div>
-                                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-                                </div>
-                            </li>
-                        
-                        </ul>
+                    <div class="bars">
+                        <div class="bar">
+                            <div class="bar-level" data-level="80%" data-text="Php" data-icon="fab fa-php"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-level" data-level="57%" data-text="Magento" data-icon="fab fa-magento"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-level" data-level="94%"></div>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <div class="skill-box">
+                <div class="skill-box-title">
+                    <h1>Autres compétences</h1>
+                </div>
+                <div class="skill-box-content">
+                    <div class="skill-box-content-1">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="cv" class="cv">
+        <div class="container cv-content">
+            <div class="block-title cv-title">
+                <h1><i class="fas fa-graduation-cap"></i> Mon curriculum vitae</h1>
+            </div>
+            <div class="cv-wrapper">
+                <div class="cv-img">
+                    <img src="img/CV-PDF.png" /><br>
+                    <a href="img/CV-PDF.pdf" class="dl-cv"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+                <div class="cv-text">
+                    <h2><i class="far fa-file-pdf"></i> CV PDF</h2>
+                    <p>Mon Curriculum Vitae au format PDF contient toutes les informations concernant mon profil. Si
+                        vous ne trouvez pas une information dans mon CV, n'hésitez pas à consulter l'ensemble de mon
+                        site ou à <a class="js-scrollTo" href="#contact">me contacter</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container contact-content">
+            <div class="block-title contact-title">
+                <h1>Contactez-moi !</h1>
+            </div>
+
+            <div class="form-container">
+                <div class="block-form">
+                    <form class="form" id="form1">
+
+                        <p class="name">
+                            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                                placeholder="Name" id="name" />
+                        </p>
+
+                        <p class="email">
+                            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"
+                                placeholder="Email" />
+                        </p>
+
+                        <p class="text">
+                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+                                placeholder="Comment"></textarea>
+                        </p>
+
+
+                        <div class="submit">
+                            <input type="submit" value="SEND" id="button-blue" />
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="block-map">
+                    <div id="macarte"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div class="container footer-content">
+            footer
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+
     <script>
-        $(document).ready(function() {
-            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+        $(document).ready(function () {
+
+                var carte = L.map('macarte').setView([46.3630104, 2.9846608], 6);
+                var marker = L.marker([51.5, -0.09]).addTo(carte);
+                var circle = L.circle([51.508, -0.11], {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 500
+                }).addTo(mymap);
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(carte);
+
+                
+
+
+
+            $('.js-scrollTo').on('click', function () { // Au clic sur un élément
                 var page = $(this).attr('href'); // Page cible
                 var speed = 750; // Durée de l'animation (en ms)
-                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
                 return false;
             });
 
@@ -213,17 +432,180 @@
             });
 
             $('.count').each(function () {
-                $(this).prop('Counter',0).animate({
+                $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+            });
+
+
+            $('.desc').hide();
+
+            $('.read-more').click(function () {
+                var buttonText = $(this).text()
+
+                if (buttonText === "Voir plus") {
+                    $(this).text('Voir moins')
+                    $(this).siblings('.desc').slideDown(500)
+                } else {
+                    $(this).text('Voir plus')
+                    $(this).siblings('.desc').slideUp(500)
+                }
+            });
+
+            /* BLUR EFFECT */
+
+            if (window.matchMedia("(min-width: 600px)").matches) {
+                var $container = $('.article_center2'),
+                    $articles = $container.children('article'),
+                    timeout;
+
+                $articles.on('mouseenter', function (event) {
+                    var $article = $(this);
+                    clearTimeout(timeout);
+                    timeout = setTimeout(function () {
+                        if ($article.hasClass('active')) return false;
+                        $articles.not($article).removeClass('active').addClass('blur');
+                        $article.removeClass('blur').addClass('active');
+                    }, 75);
+                });
+                $('.article_center2', '#services ').on('mouseleave', function (event) {
+                    clearTimeout(timeout);
+                    $articles.removeClass('active blur');
+                });
+            } else {
+                $('.desc').show()
+                $('.read-more').hide();
+            }
+
+
+
+
+
+
+            var forEach = function (array, callback, scope) {
+                for (var i = 0; i < array.length; i++) {
+                    callback.call(scope, i, array[i]);
+                }
+            };
+            window.onload = function () {
+                var max = 2160;
+                forEach(document.querySelectorAll('.progress'), function (index, value) {
+                    percent = value.getAttribute('data-progress');
+                    value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+                    value.querySelector('.value').innerHTML = percent + '%';
+                });
+            }
+
+
+
+
+            // Scroll Progress.
+            // ---------------
+
+            function scrollProgress(element) {
+                const progress = document.querySelector(element)
+
+                if (!progress.hasAttribute('min'))
+                    progress.min = 0
+                if (!progress.hasAttribute('max'))
+                    progress.max = 100
+                if (!progress.hasAttribute('value'))
+                    progress.value = 0
+
+                progress.setAttribute('aria-valuenow', `${progress.value}%`)
+
+                const scrollable = () => {
+                    let top = document.body.scrollTop || document.documentElement.scrollTop
+                    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+                    let scroll = parseFloat(top / height * progress.max).toFixed(2)
+                    progress.value = scroll
+                    progress.setAttribute('aria-valuenow', `${scroll}%`)
+                }
+
+                window.addEventListener('scroll', scrollable)
+            }
+
+            scrollProgress('.scroll-progress')
+
+
+
+
+
+            $('.bar-level').each(function () {
+                var val = $(this).data('level');
+                var text = $(this).data('text');
+                var icon = $(this).data('icon');
+                var valLevel = $(this).html("<span class='val-text'><i class='" + icon + "'></i> " + text + "</span><span class='val-level'>" + val + "</span>");
+                $(this).animate({
+                    width: val
                 });
             });
+
+            // Regular expression from W3C HTML5.2 input specification:
+            // https://www.w3.org/TR/html/sec-forms.html#email-state-typeemail
+            var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+            new Vue({
+                // root node
+                el: "#app",
+                // the instance state
+                data: function () {
+                    return {
+                        name: "John Doe",
+                        email: {
+                            value: "jo@hnd.oe",
+                            valid: true
+                        },
+                        features: ["Reactivity", "Encapsulation", "Data Binding"],
+                        selection: {
+                            member: "0",
+                            framework: "vue",
+                            features: []
+                        },
+                        message: {
+                            text: `Dear Mr. President,\n...`,
+                            maxlength: 255
+                        },
+                        submitted: false
+                    };
+                },
+                methods: {
+                    // submit form handler
+                    submit: function () {
+                        this.submitted = true;
+                    },
+                    // validate by type and value
+                    validate: function (type, value) {
+                        if (type === "email") {
+                            this.email.valid = this.isEmail(value) ? true : false;
+                        }
+                    },
+                    // check for valid email adress
+                    isEmail: function (value) {
+                        return emailRegExp.test(value);
+                    },
+                    // check or uncheck all
+                    checkAll: function (event) {
+                        this.selection.features = event.target.checked ? this.features : [];
+                    }
+                },
+                watch: {
+                    // watching nested property
+                    "email.value": function (value) {
+                        this.validate("email", value);
+                    }
+                }
+            });
+
+            
         });
     </script>
 </body>
+
 </html>

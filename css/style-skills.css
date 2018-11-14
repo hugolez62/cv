@@ -1,0 +1,101 @@
+.skills {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: rgb(42, 190, 191);
+
+}
+
+.skill-box {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px rgba(black, .3);
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.skill-box-title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.skill-box-title h1 {
+    border-bottom: solid 3px rgb(42, 190, 191);
+    width: 40%;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-box-content {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 20px;
+}
+
+.skill-box-content-1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.skill-box text.value {
+    color: black;
+}
+
+.skill-box text.text {
+    color: black;
+}
+
+.skills-title {
+    color:white;
+    text-shadow: 3px 3px 0 black;
+
+}
+
+.bars {
+    width:100%; 
+    margin:10px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .bar {
+    width:90%; 
+    height:30px; 
+    background:#CCC; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .bar-level {
+    height:30px; 
+    background:#444;
+    width:1px;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    transition: width 1s ease;
+  }
+  .val-level {
+    line-height:30px; 
+    color:#fff; 
+    margin-right:10px; 
+    font-size:12px;
+    float: right;
+  }
+
+  .val-level {
+    line-height:30px; 
+    color:#fff; 
+    margin-right:10px; 
+    font-size:12px;
+    float: right;
+  }
+
+  .val-text {
+    line-height:30px; 
+    color:#fff; 
+    margin-left:10px; 
+    font-size:18px;
+    float: left;
+  }
